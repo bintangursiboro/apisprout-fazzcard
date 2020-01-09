@@ -1,0 +1,426 @@
+openapi: 3.0.1
+info:
+  title: Fazzcard Mock Data
+  description: This is mock data from mock service
+  version: "0.1"
+servers:
+  - url: http://192.168.2.126:8000
+paths:
+  /v1/external/categories/3e69c534-a99f-4135-b056-77e44778fa22/partners/:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+          example: "5"
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/promolimit"
+              examples:
+                "0":
+                  value: |
+                    {"data": [{"id": 10,"name": "maucash","url": "https://app.appsflyer.com/id.maucash.app","icon": "https://content.payfazz.com/object/2c0524f475f15ac158991af1bc371f23e1356e353dcbea12cabc8c58cd15f768","image": "https://content.payfazz.com/object/9dae23c3e8f44e37c96d71a09e47ef390930d5a214590f725129ad7c7e4e2546","title": "Maucash","subTitle": "Maucash","recordAfter": "1 hari","disburseAfter": "2 hari","notes": "**Mohon mengirimkan rincian pengajuan pinjaman (Nama Peminjam, Nomor HP Peminjam, Bukti Pengajuan Pinjaman, Foto KTP) melalui e-mail ke cs@fazzcard.com untuk mengajukan klaim Cashback**\n* Gunakan kode referal **FAZZCARD** di aplikasi Maucash\n* Memiliki penghasilan minimum Rp 2.000.000/bulan\n* Warga Negara Indonesia\n* Berpenghasilan tetap","termOfService": "","listTitle": "Maucash","listSubTitle": "Cashback hingga 25.000","listImage": "https://content.payfazz.com/object/9d00501eb567cc632f9aae2fcce84a2520b9ef4995892a0559400c5503eb1e8a","active": true,"urlType": "applink","seqID": 0,"props":{}}],"count": 5,"hasNext": false}
+  /v1/external/promotions:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/inline_response_200"
+              examples:
+                "0":
+                  value: |
+                    {"data":[{"id":"06921318-169b-4212-9298-04d7b97f84c9","partnerId":20,"name":"Berrybenka","title":"Berrybenka ","subTitle":"","icon":"https://content.payfazz.com/object/8fd4b593b1634b8482e0932fcd6ae0fc1a1d3e2c23fb5e90fded723a302e0264","image":"https://content.payfazz.com/object/333255c55581afe47bee6352fb594e17430df5f4d8c004443dfa1f3a00bedd6d","type":null},{"id":"efa2e214-29d3-4ba5-bb9a-8cdcea68734d","partnerId":21,"name":"Hijabenka","title":"Hijabenka ","subTitle":"","icon":"https://content.payfazz.com/object/e8d6622718c395976dbaa8af5c5f577cfeb9fc22abc1bf9401079702704b61d1","image":"https://content.payfazz.com/object/5c6d5dc432f72f6a877a7a3eff4fc50eb7c986a42cd7070f7bffbecab663c7bd","type":null},{"id":"58bf9058-7922-4b69-b06c-fcf913d7f69d","partnerId":3,"name":"Tiket.com","title":"tiket keluarga","subTitle":"","icon":"https://content.payfazz.com/object/f39da8a0ae386fff0d0e7e156ea7d9f839cdefa0a221e618fcbdc9e7752c20dd","image":"https://content.payfazz.com/object/800c6944db703e752a659051ba13c932eb3b41e594aec05961aa2af5a1a80b01","type":null},{"id":"384b28bc-fe2b-4095-b76b-06df6b951277","partnerId":19,"name":"Zalora","title":"espirit ","subTitle":"","icon":"https://content.payfazz.com/object/9233ac9a85ebc696b9e3b94427f9b3f1f1addbdde0d87220d1ee137780e1e1b9","image":"https://content.payfazz.com/object/202032fedcd5b4b8f59e22f8178b57fdb0146ff1062de5bb865e9b292b48ecde","type":null},{"id":"f8edd54c-36b6-4c6d-bd4b-edc6815ccc4a","partnerId":20,"name":"Berrybenka","title":"belanja ","subTitle":"","icon":"https://content.payfazz.com/object/8fd4b593b1634b8482e0932fcd6ae0fc1a1d3e2c23fb5e90fded723a302e0264","image":"https://content.payfazz.com/object/b23f975cef5bccf1109b852544a2e5af46f044c9267ca5b440ccee0237ea13d2","type":null}],"count":5,"hasNext":false}
+  /v1/external/partners:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/partner"
+              examples:
+                "0":
+                  value: |
+                    {"data": [{"id": 43,"title": "Agoda","subTitle": "Cashback 6%","icon": "https://content.payfazz.com/object/957fbc4d5d413bd0022d472948234731a1b92180564cb1c9b7257c642e0a69fa","image": "https://content.payfazz.com/object/0ab764841e69ceff856ae152b257238978721803c0e92821c44afffc84e4b70b"},{"id": 28,"title": "Blibli","subTitle": "Cashback hingga 6%","icon": "https://content.payfazz.com/object/b36e029da46a086909553f1d8bff1a1fb872a7a63ac0459c74a6c8dd5c7fca4f","image": "https://content.payfazz.com/object/52d8219eb9602ab455b704f23c920069b020a7b7bd26374f79f257f22f57ea86"},{"id": 19,"title": "Zalora","subTitle": "Cashback hingga 12%","icon": "https://content.payfazz.com/object/9233ac9a85ebc696b9e3b94427f9b3f1f1addbdde0d87220d1ee137780e1e1b9","image": "https://content.payfazz.com/object/7a78d80152653521a8aec8bdf655e771f8b72aa253976e3437357ca75c809d85"}]}
+  /v1/external/promotions/comparisons:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/inline_response_200_1"
+              examples:
+                "0":
+                  value: |
+                    {"data":[{"id":"3e69c534-a99f-4135-b056-77e44778fa22","title":"Travel","subTitle":"Comparison Travel","icon":"https://content.payfazz.com/object/968576af629c130b82b130e3ad8fd17fcbff5aeb1eec44b94323bfe3c83de953","image":"https://content.payfazz.com/object/bb765af1398e735f7c63c4e0158c8ff5ef9c5d051e5ce7bd7efc2cd4095b7cad","seqId":3,"type":"comparison-travel"},{"id":"3e69c534-a99f-4135-b056-77e44778fa23","title":"Shopping","subTitle":"Comparison Shopping","icon":"https://content.payfazz.com/object/968576af629c130b82b130e3ad8fd17fcbff5aeb1eec44b94323bfe3c83de953","image":"https://content.payfazz.com/object/a0c121afadc10d2e4260a691c896429c47ed3c4090efd96ecba728243a2b657a","seqId":4,"type":"comparison-shopping"},{"id":"3e69c534-a99f-4135-b056-77e44778fa24","title":"Fashion","subTitle":"Comparison Fashion","icon":"https://content.payfazz.com/object/968576af629c130b82b130e3ad8fd17fcbff5aeb1eec44b94323bfe3c83de953","image":"https://content.payfazz.com/object/ea70f004b2666a7514cbf4a43788d1128625c7761e18f4d774ff8de6dfaab7ec","seqId":5,"type":"comparison-fashion"}],"count":3,"hasNext":false}
+  #if want to add another path, puth here
+  /v1/registrations/init:
+    post:
+      tags:
+        - Init Register
+      summary: Create ticket for registration
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Init"
+      responses:
+        "200":
+          description: Successfully get ticketID
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TicketID"
+
+  /v1/registrations/verify:
+    patch:
+      tags:
+        - Verify Register
+      summary: Verify otp
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Verify"
+      responses:
+        "204":
+          description: Success verify otp
+
+  /v1/registrations/start:
+    post:
+      tags:
+        - Start Registration Step
+      summary: Start registration
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TicketID"
+      responses:
+        "204":
+          description: Registration started
+        "400":
+          description: "Number already used"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StartError"
+
+  /v1/registrations/update:
+    patch:
+      tags:
+        - Update Registration Data
+      summary: Update registration data
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Update"
+      responses:
+        "204":
+          description: Success update registration data
+
+  /v1/registrations/create:
+    post:
+      tags:
+        - Create User
+      summary: Create User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TicketID"
+      responses:
+        "204":
+          description: Success create user
+
+  /v1/oauth/token:
+    post:
+      tags:
+        - Login
+      summary: User Login
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/Login"
+      responses:
+        "200":
+          description: Success create user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostLogin"
+
+  /v1/external/users/referral/{referralID}:
+    get:
+      tags:
+        - Referral Registration
+      summary: Get referral status
+      parameters:
+        - name: referralID
+          required: true
+          in: path
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: "Success get order id"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GetReferralCode"
+  /v1/external/users/register:
+    post:
+      tags:
+        - Register User
+      summary: Register User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Register"
+      responses:
+        "200":
+          description: Success register user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "success"
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              image:
+                type: string
+              subTitle:
+                type: string
+              name:
+                type: string
+              icon:
+                type: string
+              id:
+                type: string
+              partnerId:
+                type: integer
+              title:
+                type: string
+              type: {}
+        count:
+          type: integer
+        hasNext:
+          type: boolean
+    inline_response_200_1:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              image:
+                type: string
+              subTitle:
+                type: string
+              icon:
+                type: string
+              id:
+                type: string
+              title:
+                type: string
+              type:
+                type: string
+              seqId:
+                type: integer
+        count:
+          type: integer
+        hasNext:
+          type: boolean
+    promolimit:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              image:
+                type: string
+              subTitle:
+                type: string
+              name:
+                type: string
+              icon:
+                type: string
+              id:
+                type: integer
+              partnerId:
+                type: integer
+              title:
+                type: string
+              url:
+                type: string
+              notes:
+                type: string
+              recordAfter:
+                type: string
+              disburseAfter:
+                type: string
+        count:
+          type: integer
+        hasNext:
+          type: boolean
+    partner:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              image:
+                type: string
+              subTitle:
+                type: string
+              icon:
+                type: string
+              id:
+                type: integer
+              title:
+                type: string
+    Init:
+      type: object
+      properties:
+        phone:
+          type: string
+          example: "0818161301"
+    Verify:
+      type: object
+      properties:
+        ticketID:
+          type: string
+          example: "0a754fa2-06d8-4059-b419-afa2772bc208"
+        otp:
+          type: string
+          example: "123456"
+    TicketID:
+      type: object
+      properties:
+        ticketID:
+          type: string
+          example: "0a754fa2-06d8-4059-b419-afa2772bc208"
+    Update:
+      type: object
+      properties:
+        ticketID:
+          type: string
+          example: "0a754fa2-06d8-4059-b419-afa2772bc208"
+        fullname:
+          type: string
+          example: "Alvin Aditya"
+        username:
+          type: string
+          example: "0818161301"
+        phone:
+          type: string
+          example: "0818161301"
+        password:
+          type: string
+          example: "123456"
+    Login:
+      type: object
+      properties:
+        username:
+          type: string
+          example: "0811900900"
+        password:
+          type: string
+          example: "8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92"
+        grant_type:
+          type: string
+          example: "password"
+        client_id:
+          type: string
+          example: "cashfazz-android"
+        cleint_secret:
+          type: string
+          example: "secret"
+    Register:
+      type: object
+      properties:
+        phoneNumber:
+          type: string
+          example: "0818161301"
+        referralCode:
+          type: string
+          example: "3db9fcd301"
+        userType:
+          type: string
+          example: "fazzcard"
+    PostInit:
+      type: object
+      properties:
+        ticketID:
+          type: string
+          example: "0a754fa2-06d8-4059-b419-afa2772bc208"
+    GetReferralCode:
+      type: object
+      properties:
+        userType:
+          type: string
+          example: "fazzcard"
+
+    PostLogin:
+      type: object
+      properties:
+        access_token:
+          type: string
+          example: "ey1234blabla"
+        token_type:
+          type: string
+          example: "Bearer"
+        refresh_token:
+          type: string
+          example: "ey5678blabla"
+        expires_in:
+          type: integer
+          example: 80000
+
+    # RESPONSE ERROR
+    StartError:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "AUTH_ERR"
+        message:
+          type: string
+          example: "phone already used"
